@@ -5,7 +5,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="?page=Home">
-            <img class="logo" src="public\img\Logo-sucresale.png" alt="Logo sucresale">
+            <img class="logo" src="{{ asset('image/Logo-sucresale.png') }}" alt="Logo sucresale">
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">

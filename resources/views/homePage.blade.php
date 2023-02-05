@@ -15,21 +15,21 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="public\img\exemple-carousel-1.jpg" class="d-block w-100" alt="exemple_1">
+                    <img src="{{ asset('image/exemple-carousel-1.jpg') }}" class="d-block w-100" alt="exemple_1">
                     <div class="carousel-caption">
                         <h5>First slide label</h5>
                         <p>Some representative placeholder content for the slide.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="public\img\exemple-carousel-2.jpg" class="d-block w-100" alt="exemple_2">
+                    <img src="{{ asset('image/exemple-carousel-2.jpg') }}" class="d-block w-100" alt="exemple_2">
                     <div class="carousel-caption">
                         <h5>Second slide label</h5>
                         <p>Some representative placeholder content for the slide.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="public\img\exemple-carousel-3.jpg" class="d-block w-100" alt="exemple_3">
+                    <img src="{{ asset('image/exemple-carousel-3.jpg') }}" class="d-block w-100" alt="exemple_3">
                     <div class="carousel-caption">
                         <h5>Third slide label</h5>
                         <p>Some representative placeholder content for the slide.</p>
