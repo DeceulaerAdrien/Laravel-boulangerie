@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
-use App\Http\Controllers\Mail\MailController;
+use App\Http\Controllers\Mail\ContactMailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +21,4 @@ Route::get('/contactez-nous', [PostController::class, 'contactpage'])->name('con
 Route::get('/nos-produits', [PostController::class, 'productpage'])->name('produits');
 
 //Mail Route
-route::get('/send-email', [MailController::class, 'sendEmail'])->name('SendContactMail');
+route::get('/contact-mail', [ContactMailController::class, 'sendContactMail'])->name('contactMail');
