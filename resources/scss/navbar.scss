@@ -1,30 +1,57 @@
 .navbar {
+    background-color: $base_color;
     font-family: cursive;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.3em;
-    background-color: $base_color;
-    color: #fff;
-    a {
-        text-decoration: none;
-    }
     li {
         list-style: none;
     }
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
     .nav-links {
-        a {
+        .hamburger {
             color: #fff;
         }
-    }
-    .menu {
-        display: flex;
-        gap: 1em;
-        font-size: 1em;
-        li {
-            :hover {
-                background-color: black;
-                border-radius: 0.3em;
+        .menu {
+            display: flex;
+            gap: 1em;
+            font-size: 1em;
+            li {
+                padding: 0.2em 1em;
+                :hover {
+                    background-color: #4c9e9e;
+                    border-radius: 0.2em;
+                    transition: 0.3s ease;
+                }
+                .service {
+                    position: relative;
+                    :hover .dropdown {
+                        display: block;
+                    }
+                    .dropdown {
+                        background-color: rgb(1, 139, 139);
+                        padding: 1em 0;
+                        position: absolute;
+                        display: none;
+                        border-radius: 0.5em;
+                        top: 2em;
+                        li {
+                            padding: 0.5em 1em;
+                            width: 8em;
+                            text-align: center;
+                            :hover {
+                                background-color: #4c9e9e;
+                            }
+                            li {
+                                margin-top: 0.6em;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
