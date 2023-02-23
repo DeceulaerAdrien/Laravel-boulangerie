@@ -11,13 +11,13 @@ class PostController extends Controller
         return view('homePage');
     }
 
-    public function contactpage()
+    public function contactPage()
     {
         return view('contactPage');
     }
 
-    public function productpage()
+    public function productPage()
     {
-        return view('productPage');
+        return view(('productPage'));
     }
 }

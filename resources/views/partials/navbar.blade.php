@@ -10,10 +10,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('acceuil') }}">Acceuil</a>
+                    <a class="nav-link" href="{{ route('home') }}">Acceuil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('produits') }}"> Nos produits </a>
+                    <a class="nav-link" href="{{ route('products') }}"> Nos produits </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('contact') }}"> Contactez-nous </a>

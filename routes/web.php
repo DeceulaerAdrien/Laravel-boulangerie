@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
-use App\Http\Controllers\Mail\ContactMailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,9 +15,9 @@ use App\Http\Controllers\Mail\ContactMailController;
 */
 
 //Pages Route
-Route::get('/', [PostController::class, 'homepage'])->name('acceuil');
-Route::get('/contactez-nous', [PostController::class, 'contactpage'])->name('contact');
-Route::get('/nos-produits', [PostController::class, 'productpage'])->name('produits');
+Route::get('/', [PostController::class, 'homepage'])->name('home');
+Route::get('/contactez-nous', [PostController::class, 'contactPage'])->name('contact');
+Route::get('/nos-produits', [PostController::class, 'productPage'])->name('products');
 
 //Mail Route
-route::get('/contact-mail', [ContactMailController::class, 'sendContactMail'])->name('contactMail');
+Route::post('/contactez-nous/envoyer',)->name('sendMail');
