@@ -1,6 +1,7 @@
-.container-fluid {
+.container {
     padding: 0;
     .carousel {
+        max-width: 1000px;
         .carousel-inner {
             .carousel-caption {
                 right: 0%;
