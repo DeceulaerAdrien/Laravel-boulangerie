@@ -1,58 +1,71 @@
 .navbar {
-    background-color: $base_color;
-    font-family: cursive;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.3em;
-    li {
-        list-style: none;
-    }
+    padding: 2em 5em;
+    background-color: $base_color;
+    color: #fff;
     a {
         text-decoration: none;
         color: #fff;
     }
-    .nav-links {
-        .hamburger {
-            color: #fff;
+    li {
+        list-style: none;
+    }
+    input[type="checkbox"] {
+        display: none;
+    }
+    .logo {
+        img {
+            width: 10em;
+        }
+    }
+    .hamburger {
+        display: none;
+        font-size: 24px;
+        user-select: none;
+    }
+    .menu {
+        display: flex;
+        gap: 1em;
+        font-size: 18px;
+        li {
+            padding: 10px 15px;
+        }
+        li:hover {
+            background-color: black;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 2em;
+        input[type="checkbox"]:checked ~ .menu {
+            display: block;
+        }
+        .logo {
+            img {
+                width: 7em;
+            }
         }
         .menu {
-            display: flex;
-            gap: 1em;
-            font-size: 1em;
-            li {
-                padding: 0.2em 1em;
-                :hover {
-                    background-color: #4c9e9e;
-                    border-radius: 0.2em;
-                    transition: 0.3s ease;
-                }
-                .service {
-                    position: relative;
-                    :hover .dropdown {
-                        display: block;
-                    }
-                    .dropdown {
-                        background-color: rgb(1, 139, 139);
-                        padding: 1em 0;
-                        position: absolute;
-                        display: none;
-                        border-radius: 0.5em;
-                        top: 2em;
-                        li {
-                            padding: 0.5em 1em;
-                            width: 8em;
-                            text-align: center;
-                            :hover {
-                                background-color: #4c9e9e;
-                            }
-                            li {
-                                margin-top: 0.6em;
-                            }
-                        }
-                    }
-                }
+            display: none;
+            position: absolute;
+            background-color: $base_color;
+            right: 0;
+            left: 0;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 1.25em;
+            li:hover {
+                display: inline-block;
+                background-color: black;
+                transition: 0.3s ease;
             }
+        }
+        .hamburger {
+            display: block;
         }
     }
 }

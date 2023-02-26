@@ -16,7 +16,7 @@
     </header>
 
     <main>
-        {{-- @yield('Content') --}}
+        @yield('Content')
     </main>
 
     <footer>
