@@ -10,7 +10,7 @@
         <div class="menu">
             <li><a href="{{ route('home') }}">Acceuil</a></li>
             <li><a href="{{ route('products') }}">Nos produits</a></li>
-            <li class="service"><a href="{{ route('contact') }}">Contactez-nous</a></li>
+            <li><a href="{{ route('contact') }}">Contactez-nous</a></li>
         </div>
     </ul>
 </nav>
