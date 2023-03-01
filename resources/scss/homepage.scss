@@ -1,11 +1,10 @@
 .slideshow {
-    background-color: green;
+    // background-color: green;
     height: 300px;
     position: relative;
-    margin: auto;
+    overflow: hidden;
     .mySlides {
         display: none;
-
         .text {
             color: #f2f2f2;
             font-size: 15px;

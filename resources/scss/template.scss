@@ -9,9 +9,12 @@ html {
     body {
         background-color: $background-color;
         font-family: cursive;
-        padding-bottom: 3em;
-        min-height: 100%;
-        position: relative;
+        // padding-bottom: 3em;
+        // min-height: 100%;
+        // position: relative;
+        main {
+            margin: 0 100px;
+        }
         footer {
             position: absolute;
             bottom: 0;
