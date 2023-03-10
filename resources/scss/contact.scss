@@ -39,16 +39,27 @@
                     width: 45%;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-around;
                 }
             }
             .message {
                 display: flex;
-                flex-direction: column;
-                textarea {
-                    resize: none;
-                    height: 170px;
+                justify-content: space-around;
+                .message_details {
+                    width: 95%;
+                    display: flex;
+                    flex-direction: column;
+                    textarea {
+                        resize: none;
+                        height: 170px;
+                    }
                 }
+            }
+            button {
+                border: 1px solid black;
+                border-radius: 5px;
+                margin: 15px 22px;
+                width: 15%;
+                padding: 5px;
             }
         }
     }

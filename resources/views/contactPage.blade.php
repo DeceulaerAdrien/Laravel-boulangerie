@@ -43,8 +43,10 @@
                     </div>
                 </div>
                 <div class="message">
-                    <label for="contact-Message">Message:</label>
-                    <textarea rows="3" cols="20" name="contact_Message" required="required"></textarea>
+                    <div class="message_details">
+                        <label for="contact-Message">Message:</label>
+                        <textarea rows="3" cols="20" name="contact_Message" required="required"></textarea>
+                    </div>
                 </div>
                 <button type="submit" value="contactSubmit" name="contactSubmit" class="btn btn-light">Envoyé</button>
             </form>
