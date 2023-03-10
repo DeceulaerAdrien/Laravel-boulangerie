@@ -13,9 +13,6 @@
             <p>48 Rue de la Croix,</p>
             <p>6042 Lodelinsart</p>
             <p>
-                <a href="tel:0493396019">0493 39 60 19</a>
-            </p>
-            <p>
                 <a href="tel:071576131">071 57 61 31</a>
             </p>
         </div>
@@ -48,14 +45,17 @@
                         <textarea rows="3" cols="20" name="contact_Message" required="required"></textarea>
                     </div>
                 </div>
-                <button type="submit" value="contactSubmit" name="contactSubmit" class="btn btn-light">Envoyé</button>
+                <div class="send_button">
+                    <button type="submit" value="contactSubmit" name="contactSubmit">Envoyé</button>
+                </div>
             </form>
         </div>
     </div>
 
-    {{-- <div class="map">
+    <div class="map">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1068.4851344502065!2d4.455779365279284!3d50.43550785217285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c228a59a562325%3A0xee45718117b413d0!2sla%20table%20du%20sucr%C3%A9%20et%20sal%C3%A9!5e0!3m2!1sfr!2sbe!4v1653737137251!5m2!1sfr!2sbe"
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div> --}}
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d617.2365647069249!2d4.456457096578993!3d50.43566552807271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c228a59a562325%3A0xee45718117b413d0!2sla%20table%20du%20sucr%C3%A9%20et%20sal%C3%A9!5e0!3m2!1sfr!2sbe!4v1678463060944!5m2!1sfr!2sbe"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 @endsection

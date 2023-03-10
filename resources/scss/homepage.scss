@@ -1,5 +1,5 @@
 .slideshow {
-    height: 300px;
+    height: 18.75em;
     position: relative;
     overflow: hidden;
     .mySlides {
@@ -15,6 +15,7 @@
             bottom: 8px;
             width: 100%;
             text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
         }
         .numbertext {
             color: black;
@@ -76,7 +77,7 @@
 
 @media (max-width: 768px) {
     .slideshow {
-        height: 150px;
+        height: 9.375em;
     }
 }
 
