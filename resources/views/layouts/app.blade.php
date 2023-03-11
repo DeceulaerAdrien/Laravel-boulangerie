@@ -21,7 +21,7 @@
 
     <footer>
         <div class="copyright">
-            <p>&#169;2022 La Table du Sucré & Salé</p>
+            <p>&#169;2023 La Table du Sucré & Salé</p>
         </div>
     </footer>
 </body>
