@@ -18,7 +18,7 @@
         <div id="mySlides" class="mySlides fade">
             <div class="numbertext"></div>
             <img src="{{ asset('image/img-2.jpg') }}" alt="img-3">
-            <div class="text">Caption two</div>
+            <div class="text">Caption Text</div>
         </div>
 
         <a class="next" id="next">&#10095;</a>
