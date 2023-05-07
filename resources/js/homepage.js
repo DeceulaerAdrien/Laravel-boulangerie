@@ -3,8 +3,10 @@ const nextButton = document.querySelector("#next");
 const previousButton = document.querySelector("#previous");
 const numberText = document.querySelectorAll(".numbertext");
 const slides = document.querySelectorAll(".mySlides");
+const numSlides = slides.length;
 const dots = document.querySelector("#dots");
-const dot = document.querySelectorAll(".dot");
+let dot = document.querySelectorAll(".dot");
+const numDots = dot.length;
 
 // Next/previous controls
 function nextSlide(n) {
@@ -28,6 +30,16 @@ function showSlides(n) {
     numberText[slideIndex - 1].innerHTML = `${slideIndex}/${slides.length}`;
 }
 
+if (numDots < numSlides) {
+    const numNewDots = numSlides - numDots;
+    for (let i = 0; i < numNewDots; i++) {
+        dots.innerHTML += '<span class="dot"></span>';
+    }
+    dot = document.querySelectorAll(".dot"); // mise à jour de la variable dot
+}
+
+showSlides(slideIndex);
+
 nextButton.addEventListener("click", () => {
     nextSlide(1);
 });
@@ -35,9 +47,3 @@ nextButton.addEventListener("click", () => {
 previousButton.addEventListener("click", () => {
     nextSlide(-1);
 });
-
-for (let i = 0; i < slides.length; i++) {
-    dots.innerHTML += '<span class="dot"></span>';
-}
-
-showSlides(slideIndex);
