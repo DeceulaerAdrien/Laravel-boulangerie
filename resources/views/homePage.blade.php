@@ -10,7 +10,7 @@
 
         <div id="mySlides" class="mySlides fade">
             <div class="numbertext"></div>
-            <img src="{{ asset('image\ipsum.jpg') }}" alt="img-1">
+            <img src="{{ asset('image/ipsum.jpg') }}" alt="img-1">
             <div class="text">Caption Text</div>
         </div>
 
