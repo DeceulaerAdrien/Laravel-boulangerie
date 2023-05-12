@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('Description', 'Page de contacte de la Table du sucré et salé')
-@section('Title', 'Contactez-Nous')
 
 
 @section('Content')
