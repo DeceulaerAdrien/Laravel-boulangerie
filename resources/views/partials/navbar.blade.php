@@ -1,7 +1,7 @@
 <nav class="navbar">
     <div class="logo">
         <a href="{{ route('home') }}">
-            <img src="{{ asset('image/Logo-sucresale.svg') }}" alt="Logo sucresale">
+            <img src="{{ asset('storage/image/Logo-sucresale.svg') }}" alt="Logo sucresale">
         </a>
     </div>
     <ul>

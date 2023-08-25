@@ -8,7 +8,7 @@
 
 
         <div id="mySlides" class="mySlides fade">
-            <img src="" alt="test 2">
+            <img src="{{ asset('storage/image/img-2.jpg') }}" alt="test 2">
             <p class="numbertext"></p>
         </div>
 
